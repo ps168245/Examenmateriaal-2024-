@@ -1,0 +1,37 @@
+CLONE:
+git clone https://PS195828@dev.azure.com/PS195828/Project_6/_git/Project_6
+
+PUSHEN:
+Git add --all
+Git commit
+Git push https://Gamekeuzedeel@dev.azure.com/Gamekeuzedeel/Gamedevelopment/_git/Gamedevelopment
+
+ALs dat nie werkt dan:
+Git commit
+git add --all
+Git push https://Gamekeuzedeel@dev.azure.com/Gamekeuzedeel/Gamedevelopment/_git/Gamedevelopment
+
+
+PULLEN:
+Git pull https://Gamekeuzedeel@dev.azure.com/Gamekeuzedeel/Gamedevelopment/_git/Gamedevelopment
+composer install
+composer update
+npm install
+npm run dev -- terminal 1 window
+php artisan serve -- terminal 2 window (weet zeker dat localhost:8000 is in .env file in laravel)
+
+PULLEN VAN MASTER EN ZETTEN OP JE BRANCH (zodat je branch up-to-date is):
+git checkout branch2
+git pull origin master
+
+BRANCH MAKEN/OPHALEN en pushen
+git add --all
+git status
+git branch
+git branch feature/dashboard
+git branch
+git checkout feature/dashboard
+git branch
+git commit -a
+git push
+git push --set-upstream origin feature/dashboard

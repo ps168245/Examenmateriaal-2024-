@@ -1,0 +1,25 @@
+Table artworks {
+  id integer [primary key]
+  name string
+  art_picture string
+  created_at timestamp 
+  updated_at timestamp
+}
+
+
+Table artists {
+  id integer [primary key]
+  name integer
+  profile_picture string
+  created_at timestamp 
+  updated_at timestamp
+}
+
+Table artwork_artist {
+  id integer [primary key]
+  artwork_id int
+  artist_id int
+} 
+
+Ref: artworks.id > artwork_artist.artwork_id
+Ref: artists.id > artwork_artist.artist_id

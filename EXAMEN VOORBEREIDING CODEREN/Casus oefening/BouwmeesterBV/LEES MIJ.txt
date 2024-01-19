@@ -1,0 +1,9 @@
+Wat moet er gedaan worden:
+ERD maken
+klassendiagram maken
+testreport en testplan maken
+usecase maken
+2x Crud maken via laravel (one-to-many of many-to-many) 
+Presentatie maken
+
+Vrijdag presenteren

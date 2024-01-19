@@ -1,0 +1,202 @@
+<mxfile host="Electron" modified="2023-11-22T09:35:10.032Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="Yxj_ISgsHpIIHhCArbQw" version="22.1.2" type="device">
+  <diagram name="Pagina-1" id="WJ7X0gV58vLUoKu8gMYf">
+    <mxGraphModel dx="1434" dy="884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-1" value="beheerder" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+          <mxGeometry x="30" y="170" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-2" value="klantenservice" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+          <mxGeometry x="30" y="310" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-3" value="Klant" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+          <mxGeometry x="30" y="450" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-4" value="Gamestore ggStore" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="40" width="720" height="780" as="geometry">
+            <mxRectangle x="260" y="170" width="140" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-15" value="Notificaties ontvangen van verlanglijstgames" style="ellipse;whiteSpace=wrap;html=1;" parent="f9My6hpA5gk8Q7hMBKfk-4" vertex="1">
+          <mxGeometry x="430" y="400" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-16" value="verlanglijst&amp;nbsp;&lt;font color=&quot;#ff3333&quot;&gt;*beheren&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="f9My6hpA5gk8Q7hMBKfk-4" vertex="1">
+          <mxGeometry x="240" y="400" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-17" value="&amp;nbsp;overzichten&amp;nbsp;&lt;font color=&quot;#007fff&quot;&gt;*inzien&lt;/font&gt;&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" parent="f9My6hpA5gk8Q7hMBKfk-4" vertex="1">
+          <mxGeometry x="390" y="150" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-29" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="f9My6hpA5gk8Q7hMBKfk-4" target="f9My6hpA5gk8Q7hMBKfk-16" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-45" y="440" as="sourcePoint" />
+            <mxPoint x="240" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-32" value="Voorraad games markeren als ze zijn uitverkocht" style="ellipse;whiteSpace=wrap;html=1;" parent="f9My6hpA5gk8Q7hMBKfk-4" vertex="1">
+          <mxGeometry x="580" y="60" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-36" value="Voorraad artikelen&amp;nbsp;&lt;font color=&quot;#ffff33&quot;&gt;*beheren&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="f9My6hpA5gk8Q7hMBKfk-4" vertex="1">
+          <mxGeometry x="390" y="60" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-37" value="" style="endArrow=classic;dashed=1;html=1;rounded=0;endFill=1;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="f9My6hpA5gk8Q7hMBKfk-4" source="f9My6hpA5gk8Q7hMBKfk-32" target="f9My6hpA5gk8Q7hMBKfk-36" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="150" as="sourcePoint" />
+            <mxPoint x="590" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-38" value="Include" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="f9My6hpA5gk8Q7hMBKfk-37" vertex="1" connectable="0">
+          <mxGeometry x="-0.0267" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-44" value="" style="endArrow=classic;dashed=1;html=1;rounded=0;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="f9My6hpA5gk8Q7hMBKfk-4" source="f9My6hpA5gk8Q7hMBKfk-15" target="f9My6hpA5gk8Q7hMBKfk-16" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="466" y="500" as="sourcePoint" />
+            <mxPoint x="360" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-45" value="Include" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="f9My6hpA5gk8Q7hMBKfk-44" vertex="1" connectable="0">
+          <mxGeometry x="-0.0267" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-46" value="Overzicht van games bekijken" style="ellipse;whiteSpace=wrap;html=1;" parent="f9My6hpA5gk8Q7hMBKfk-4" vertex="1">
+          <mxGeometry x="150" y="570" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-47" value="Games &lt;font color=&quot;#ff00ff&quot;&gt;*opzoeken&lt;/font&gt; met een zoekfunctie" style="ellipse;whiteSpace=wrap;html=1;" parent="f9My6hpA5gk8Q7hMBKfk-4" vertex="1">
+          <mxGeometry x="350" y="600" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-49" value="" style="endArrow=classic;dashed=1;html=1;rounded=0;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="f9My6hpA5gk8Q7hMBKfk-4" source="f9My6hpA5gk8Q7hMBKfk-47" target="f9My6hpA5gk8Q7hMBKfk-46" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="695" as="sourcePoint" />
+            <mxPoint x="280" y="645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-50" value="Include" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="f9My6hpA5gk8Q7hMBKfk-49" vertex="1" connectable="0">
+          <mxGeometry x="-0.0267" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-53" value="Betaalgegevens opslaan om games mee te kopen" style="ellipse;whiteSpace=wrap;html=1;" parent="f9My6hpA5gk8Q7hMBKfk-4" vertex="1">
+          <mxGeometry x="310" y="490" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-55" value="Aankopen herstellen voor de klant" style="ellipse;whiteSpace=wrap;html=1;" parent="f9My6hpA5gk8Q7hMBKfk-4" vertex="1">
+          <mxGeometry x="150" y="220" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-56" value="Klantenvragen &lt;font color=&quot;#cc0066&quot;&gt;*beheren&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="f9My6hpA5gk8Q7hMBKfk-4" vertex="1">
+          <mxGeometry x="150" y="310" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-5" value="Website bezoeker" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="210" y="980" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-10" value="Ingelogde medewerker" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+          <mxGeometry x="435" y="980" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-12" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="44.709999999999994" y="260" as="sourcePoint" />
+            <mxPoint x="44.709999999999994" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-14" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="44.709999999999994" y="400" as="sourcePoint" />
+            <mxPoint x="44.709999999999994" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-18" value="&lt;font color=&quot;#ff3333&quot;&gt;* Games toevoegen aan verlanglijst, Games verwijderen van de verlanglijst&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="90" y="830" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-20" value="Ingelogde klant" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+          <mxGeometry x="310" y="980" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-21" value="bezoeker" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="30" y="580" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-22" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="44.709999999999994" y="535" as="sourcePoint" />
+            <mxPoint x="44.709999999999994" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-24" value="" style="endArrow=classic;dashed=1;html=1;rounded=0;endFill=1;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="20" y="1050" as="sourcePoint" />
+            <mxPoint x="70" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-26" value="Include" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="f9My6hpA5gk8Q7hMBKfk-24" vertex="1" connectable="0">
+          <mxGeometry x="-0.0267" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-25" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="1070" as="sourcePoint" />
+            <mxPoint x="110" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-27" value="Extend" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="f9My6hpA5gk8Q7hMBKfk-25" vertex="1" connectable="0">
+          <mxGeometry x="-0.0267" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-30" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="1020" as="sourcePoint" />
+            <mxPoint x="50" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-35" value="&lt;font color=&quot;#ffff33&quot;&gt;* voorraad artikelen toevoegen, vooraad artikel verwijderen, vooraad artikel aantal aanpassen, vooraad artikellen inzien. Artikelen kunnen afbeeldingen uploaden/verwijderen/aanpassen, het instellen van prijzen en specificeren van beschikbare platforms.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="90" y="860" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-40" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="f9My6hpA5gk8Q7hMBKfk-1" target="f9My6hpA5gk8Q7hMBKfk-36" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="170" as="sourcePoint" />
+            <mxPoint x="190" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-42" value="&lt;font color=&quot;#007fff&quot;&gt;*best verkopende games van de maand inzien, aankoopgeschiedenis van de klant bekijken&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="90" y="890" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-43" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="f9My6hpA5gk8Q7hMBKfk-1" target="f9My6hpA5gk8Q7hMBKfk-17" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="55" y="210" as="sourcePoint" />
+            <mxPoint x="490" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-48" value="&lt;font color=&quot;#ff00ff&quot;&gt;*Zoeken op basis van titel, genre, platform&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="90" y="920" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-52" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="f9My6hpA5gk8Q7hMBKfk-21" target="f9My6hpA5gk8Q7hMBKfk-46" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="55" y="490" as="sourcePoint" />
+            <mxPoint x="340" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-54" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="f9My6hpA5gk8Q7hMBKfk-3" target="f9My6hpA5gk8Q7hMBKfk-53" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="50" y="610" as="sourcePoint" />
+            <mxPoint x="268" y="632" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-59" value="&lt;font color=&quot;#cc0066&quot;&gt;*inzien van klantenvragen, klantenvragen labelen/categoriseren, klantenvragen beantworden, klantenvragen verwijderen&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="90" y="950" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-60" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="f9My6hpA5gk8Q7hMBKfk-2" target="f9My6hpA5gk8Q7hMBKfk-56" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="55" y="490" as="sourcePoint" />
+            <mxPoint x="340" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f9My6hpA5gk8Q7hMBKfk-61" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="f9My6hpA5gk8Q7hMBKfk-2" target="f9My6hpA5gk8Q7hMBKfk-55" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="55" y="350" as="sourcePoint" />
+            <mxPoint x="250" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

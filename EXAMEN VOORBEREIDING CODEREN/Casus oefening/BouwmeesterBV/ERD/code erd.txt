@@ -1,0 +1,18 @@
+table users {
+  id bigInt [primary key]
+  name varchar
+  password varchar
+  role bigInt
+  email varchar
+}
+
+
+table roles {
+  id bigInt [primary key]
+  name varchar
+  permisionLvl bigInt
+  
+}
+
+// one to many
+Ref: users.role > roles.id

@@ -1,0 +1,74 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table catagories {
+  id integer [primary key]
+  subcatagory integer
+  name varchar
+  created_at timestamp 
+  updated_at timestamp
+}
+
+Table subCatagories {
+  id integer [primary key]
+  name varchar
+  created_at timestamp 
+  updated_at timestamp
+}
+
+// one to many
+Ref: catagories.subcatagory > subCatagories.id
+
+
+Table newsArticles {
+  id integer [primary key]
+  title varchar
+  content text [note: 'Content of the news']
+  catagory integer
+  subcatagory integer
+  created_at timestamp 
+  updated_at timestamp
+}
+
+Ref: newsArticles.catagory > catagories.id
+Ref: newsArticles.subcatagory > subCatagories.id
+table comments {
+  id integer [primary key]
+  newsArticle_id integer
+  user_id integer
+  content varchar
+}
+
+table users {
+  id integer [primary key]
+  name varchar
+  password varchar
+  role varchar
+  email varchar
+  
+}
+
+// many to one
+Ref: newsArticles.id < comments.newsArticle_id
+Ref: users.id < comments.user_id
+
+
+
+
+table tags {
+  id integer [primary key]
+  naam varchar
+  created_at timestamp 
+  updated_at timestamp
+}
+
+table newsArticles_tags {
+  id integer [primary key]
+  newsArticle_id varchar
+  tag_id varchar
+  created_at timestamp 
+  updated_at timestamp
+}
+
+Ref: tags.id < newsArticles_tags.tag_id
+Ref: newsArticles.id < newsArticles_tags.newsArticle_id

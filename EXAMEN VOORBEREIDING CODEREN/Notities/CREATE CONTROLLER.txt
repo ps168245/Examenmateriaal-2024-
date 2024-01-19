@@ -1,0 +1,5 @@
+CREATE CONTROLLER
+php artisan make:controller IndexController 
+
+CREATE CRUD CONTROLLER
+php artisan make:controller YourController --resource

@@ -1,0 +1,11 @@
+NA PULLEN:
+composer install
+composer update
+npm install
+npm update
+php artisan migrate:fresh --seed
+visual code restarten
+
+IN CONSOLE OM TE STARTEN:
+npm run dev
+php artisan serve

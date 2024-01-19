@@ -1,0 +1,19 @@
+Gebruik voor web:
+Laravel
+Breeze
+filamentphp -- kyrill keuze
+
+
+
+
+JE MOET:
+Userstories maken
+Taken naar rechts schuiven
+push & commits doen
+
+
+
+PROJECT RUNNEN:
+npm run dev
+laravel php serve
+php artisan serve (miss beter dan laravel php serve)

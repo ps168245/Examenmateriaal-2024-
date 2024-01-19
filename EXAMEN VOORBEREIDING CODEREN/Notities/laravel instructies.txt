@@ -1,0 +1,62 @@
+WAT DOET WAT?
+Model: Vertegenwoordigt een database tabel en de bijbehorende operaties voor gegevensbeheer en -interactie.
+Migraties: Creëert en wijzigt de database schemastructuur om de database consistent te houden met de applicatie.
+Seeder: Vult de database met initiële of voorbeeldgegevens om de ontwikkeling en tests te vergemakkelijken.
+Controller: Bevat de logica en functies om HTTP-verzoeken te verwerken en de juiste respons te genereren.
+web.php (route): Definieert URL-routes en hun bijbehorende controlleracties voor het routeren van HTTP-verzoeken naar de juiste functionaliteit in de applicatie.
+Resources > css: Hier kan je ccs bestanden opslaan, maar css vraagt wel npm. Installeerr deze dan ook in je laravel applicatie.
+Resources > view: Hier sla te alle blade files op. Deze zijn je website paginas.
+
+HOE GA JE AAN HET WERK
+Definieer je database schema en tabellen: Maak de benodigde migraties aan om de structuur van je database tabellen te definiëren. Migraties stellen je in staat om de database schema te beheren en wijzigingen geleidelijk toe te passen.
+
+Maak de modellen aan: Nadat je migraties zijn opgezet, maak je de bijbehorende modellen aan die je database tabellen vertegenwoordigen. Modellen bieden een objectgeoriënteerde interface om met de database te communiceren en relaties tussen tabellen te definiëren.
+
+Implementeer de seeders: Nadat je de modellen hebt gemaakt, kun je seeders aanmaken om je database te vullen met initiële of voorbeeldgegevens. Seeders zijn handig voor testen en het bieden van een startpunt voor de data in je applicatie.
+
+Maak de controllers aan: Vervolgens maak je controllers aan om de logica van je applicatie te beheren en inkomende HTTP-verzoeken te verwerken. Controllers ontvangen de verzoeken, voeren de benodigde acties uit met behulp van de modellen en genereren geschikte antwoorden.
+
+Definieer routes in web.php: Ten slotte definieer je de routes in het web.php-bestand, dat dient als het startpunt voor het routeren van HTTP-verzoeken in Laravel. Wijs de routes toe aan de bijbehorende controlleracties om de verbinding tussen URL's en applicatiefuncties tot stand te brengen.
+
+MAAK MODEL + MIGRATION:
+php artisan make:model NaamModel --migration
+
+CREATE SEEDER
+php artisan make:seeder SeederName
+
+
+CREATE CONTROLLER
+php artisan make:controller IndexController 
+
+CREATE CRUD CONTROLLER
+php artisan make:controller YourController --resource
+
+laravel opstarten:
+php artisan serve
+npm run dev  
+
+
+
+Manytomany relation:
+meer op meer, er kunnen meer gebruikers meerdere aantalen hebben.
+bv valve games
+er kunnen meerdere gebruikers meerdere games in bezit hebben.
+
+
+
+Debuggen om te zien of data door gestuurd wordt:
+
+Stel je voor je wilt de function index inzien, dan maak je een dd (datadump) in de functie
+    public function index()
+    {
+        list($monthsCount, $months) = $this->dashboardUserLinechartJs(); // first function
+        list($yearsCount, $years) = $this->dashboardUserBarchartJs(); // second function
+
+        dd($years,$yearsCount, $months, $monthsCount); // DIT IS JE DATA DUMP!
+        return view('stats', compact('months', 'monthsCount', 'years', 'yearsCount'));
+    }
+
+OF in betreffende view.blade.php
+    @foreach ($yearsCount as $yearCount) // yearscount is condition van controller en mindervoud schijf je op
+     <p> {{$yearCount}} </p>   
+    @endforeach
